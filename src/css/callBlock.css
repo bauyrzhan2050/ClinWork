@@ -1,0 +1,50 @@
+.callBlock{
+    width: 100px;
+    height: 100px;
+    background-color:#27477d; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;   
+    border: 3px solid #fff;
+    z-index: 999;
+}
+
+.callBlock .envelope{
+    font-size: 50px;
+    transition: 0.3s;
+    animation-name: rotate-windows;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    color: #fff;
+} 
+.callBlock .envelope:hover{
+    font-size: 70px;
+} 
+@keyframes rotate-windows {
+    0% {
+      transform: perspective(500px) rotateY(-42deg);
+      -webkit-transform: perspective(500px) rotateY(-42deg);
+      -moz-transform: perspective(500px) rotateY(-42deg);
+      -ms-transform: perspective(500px) rotateY(-42deg);
+      -o-transform: perspective(500px) rotateY(-42deg);
+    }
+    50% {
+      transform: perspective(500px) rotateY(0deg);
+      -webkit-transform: perspective(500px) rotateY(0deg);
+      -moz-transform: perspective(500px) rotateY(0deg);
+      -ms-transform: perspective(500px) rotateY(0deg);
+      -o-transform: perspective(500px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(500px) rotateY(-42deg);
+      -webkit-transform: perspective(500px) rotateY(-42deg);
+      -moz-transform: perspective(500px) rotateY(-42deg);
+      -ms-transform: perspective(500px) rotateY(-42deg);
+      -o-transform: perspective(500px) rotateY(-42deg);
+    }
+  }
